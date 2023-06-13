@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.css';
 
 export const metadata = {
@@ -7,7 +8,9 @@ export const metadata = {
 export default function LineupLayout({ children }) {
     return (
         <>
-            <nav>Lineup Navbar</nav>
+            <nav>
+                <Link href='/'>Link to Home Page</Link>
+            </nav>
             <main className={styles.main}>
                 {children}
             </main>
